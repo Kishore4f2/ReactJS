@@ -1,0 +1,66 @@
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== PAGE BACKGROUND ====== */
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#0f172a,#1e293b,#020617);
+}
+
+/* ====== GLASS CARD ====== */
+.stopwatch-card {
+  padding: 45px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  text-align: center;
+  min-width: 350px;
+}
+
+/* ====== TIMER TEXT ====== */
+.time-text {
+  color: white;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ====== BUTTONS ====== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+  background: linear-gradient(45deg,#06b6d4,#3b82f6);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.btn-stop {
+  background: linear-gradient(45deg,#ef4444,#f97316);
+}
+
+/* ====== HOVER EFFECT ====== */
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  opacity: 0.9;
+}

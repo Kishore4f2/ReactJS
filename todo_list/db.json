@@ -12,5 +12,42 @@
       "Email": "sureshadabala@gmail.com",
       "Password": "12345"
     }
+  ],
+  "todos": [
+    {
+      "id": "2931",
+      "task": "Learn Java",
+      "isCompleted": false,
+      "date": "3/11/2026, 12:24:44 PM",
+      "user_id": "3184"
+    },
+    {
+      "id": "3139",
+      "task": "Learn python",
+      "isCompleted": false,
+      "date": "3/11/2026, 12:37:33 PM",
+      "user_id": "3184"
+    },
+    {
+      "id": "f93a",
+      "task": "Add Java",
+      "isCompleted": false,
+      "date": "3/11/2026, 12:50:49 PM",
+      "user_id": "3184"
+    },
+    {
+      "id": "3f12",
+      "task": "Learn Java Full Stack",
+      "isCompleted": false,
+      "date": "3/11/2026, 12:53:03 PM",
+      "user_id": "6c19"
+    },
+    {
+      "id": "97bc",
+      "task": "Linkedin Post ",
+      "isCompleted": false,
+      "date": "3/11/2026, 12:57:59 PM",
+      "user_id": "6c19"
+    }
   ]
 }

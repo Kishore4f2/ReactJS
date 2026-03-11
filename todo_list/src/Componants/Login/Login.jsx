@@ -11,7 +11,7 @@ function Login() {
     const onFormSubmit = async (event) => {
         try{
             event.preventDefault();
-            let res = await fetch(`http://localhost:3001/users?email=${Email}`)
+            let res = await fetch(`http://localhost:3001/users?Email=${Email}`)
             let jsonRes = await res.json();
 
             if(jsonRes.length===0) {
@@ -19,6 +19,7 @@ function Login() {
                 return
             } else {
                 if(Password==jsonRes[0].Password) {
+                    localStorage.setItem("login_user",jsonRes[0].id)
                     console.log("Login Succesfully");
                     setError(false);
                 } else {

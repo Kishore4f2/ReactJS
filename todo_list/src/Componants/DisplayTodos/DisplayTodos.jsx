@@ -16,16 +16,9 @@ function DisplayTodos() {
             "Content-Type" : "application/json" ,
           },
           body : JSON.stringify({
-            isCompleted: !todo.isCompleted
+            isCompleted: todo.isCompleted?false:true
           })
         });
-
-        let updatedTodo = await res3.json();
-
-        setTasks(tasks.map(task=>task.id === id?updatedTodo : task));
-        
-            console.log("Todo Updated Succesfully")
-          
       } catch (error) {
         console.log(error.message);
       }
@@ -37,7 +30,7 @@ function DisplayTodos() {
           method : "DELETE"
           });
         let jsonRes1 = await res1.json();
-          if(jsonRes1.ok) {
+          if(!jsonRes1.ok) {
             console.log("Todo Deleted Succesfully")
           }
       } catch (error) {
